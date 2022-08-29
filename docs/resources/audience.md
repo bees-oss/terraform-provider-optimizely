@@ -1,6 +1,6 @@
 # Audience Resource
 
-Manages Optimizely Audiences 
+Manages Optimizely Audiences
 
 ## Example Usage
 

@@ -1,1 +1,5 @@
 /vendor
+examples/.terraform*
+examples/*.tfvars.json
+examples/terraform.tfstate*
+!examples/.terraformrc

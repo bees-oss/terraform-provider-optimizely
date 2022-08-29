@@ -5,6 +5,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/pffreitas/optimizely-terraform-provider/optimizely/attribute"
 	"github.com/pffreitas/optimizely-terraform-provider/optimizely/audience"
 	"github.com/pffreitas/optimizely-terraform-provider/optimizely/client"
 	"github.com/pffreitas/optimizely-terraform-provider/optimizely/environment"
@@ -25,8 +26,9 @@ func Provider() *schema.Provider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"optimizely_feature":  flag.ResourceFeature(),
-			"optimizely_audience": audience.ResourceAudience(),
+			"optimizely_feature":   flag.ResourceFeature(),
+			"optimizely_audience":  audience.ResourceAudience(),
+			"optimizely_attribute": attribute.ResourceAttribute(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"optimizely_environment": environment.DataSourceEnvironment(),
