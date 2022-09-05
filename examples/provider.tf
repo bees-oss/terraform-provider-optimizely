@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     optimizely = {
-      source  = "pffreitas/optimizely"
+      source  = "ab-inbev-bees/optimizely"
       version = "0.10"
     }
   }

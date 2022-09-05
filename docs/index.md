@@ -1,15 +1,15 @@
 # Optimizely Provider
 
-Optimizely Terraform Provider allows you to manager Optimizely resources such as Flags and Audiences. 
+Optimizely Terraform Provider allows you to manager Optimizely resources such as Flags and Audiences.
 
 ## Example Usage
 
-```hcl 
+```hcl
 
 terraform {
   required_providers {
     optimizely = {
-      source = "pffreitas/optimizely"
+      source = "ab-inbev-bees/optimizely"
       version = "0.0.19"
     }
   }
@@ -17,18 +17,18 @@ terraform {
 
 
 variable "api_host" {
-	type = string
-	default = "https://api.optimizely.com"
+ type = string
+ default = "https://api.optimizely.com"
 }
 
 variable "api_token" {
-	type = string
-	sensitive = true
+ type = string
+ sensitive = true
 }
 
 provider "optimizely" {
-	host  = var.api_host
-	token = var.api_token
+ host  = var.api_host
+ token = var.api_token
 }
 
 ```

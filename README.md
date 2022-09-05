@@ -1,45 +1,45 @@
-### Terraform provider for Optimizely
+# Terraform provider for Optimizely
 
-Find provider configuration [here](https://registry.terraform.io/providers/pffreitas/optimizely/latest/docs)
+Find provider configuration [here](https://registry.terraform.io/providers/ab-inbev-bees/optimizely/latest/docs)
 
+## How to use
 
-### How to use 
+Understand how to use this provider in your terraform code:
 
+### Configure Optimizely Provider
 
-#### Configure Optimizely Provider
-
-```
+```tf
 terraform {
   required_providers {
     optimizely = {
-      source = "pffreitas/optimizely"
+      source = "ab-inbev-bees/optimizely"
       version = "0.0.18"
     }
   }
 }
 
 variable "api_host" {
-	type = string
-	default = "https://api.optimizely.com"
+ type = string
+ default = "https://api.optimizely.com"
 }
 
 variable "api_token" {
-	type = string
-	sensitive = true
+ type = string
+ sensitive = true
 }
 
 
 provider "optimizely" {
     host  = var.api_host
-	token = var.api_token
+ token = var.api_token
 }
 ```
 
-#### Configure Environments and Projects
+### Configure Environments and Projects
 
-``` 
+```tf
 data "optimizely_project" "bees_test_cac" { 
-	id = 20410805626
+ id = 20410805626
 }
 
 data "optimizely_environment" "dev" {
@@ -59,9 +59,9 @@ data "optimizely_environment" "prod" {
 }
 ```
 
-#### Create Audiences
+### Create Audiences
 
-```
+```tf
 resource "optimizely_audience" "country_ec" {
     name = "COUNTRY_EC_TERRAFORM"
     conditions = "[\"and\", {\"type\": \"custom_attribute\", \"name\": \"COUNTRY\", \"value\": \"ec\"}]"
@@ -78,10 +78,9 @@ resource "optimizely_audience" "country_us" {
 }
 ```
 
+### Create Feature Flags
 
-#### Create Feature Flags 
-
-```
+```tf
 resource "optimizely_feature" "dynamic_forms_terraform" {
   project     = data.optimizely_project.bees_test_cac.id
   name        = "Dynamic Forms"

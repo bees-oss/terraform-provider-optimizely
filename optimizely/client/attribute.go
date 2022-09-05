@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/pffreitas/optimizely-terraform-provider/optimizely/attribute"
+	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/attribute"
 )
 
 type Post struct {

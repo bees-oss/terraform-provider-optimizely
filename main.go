@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/pffreitas/optimizely-terraform-provider/optimizely"
 )
 
 func main() {
