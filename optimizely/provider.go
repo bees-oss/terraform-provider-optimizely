@@ -3,12 +3,12 @@ package optimizely
 import (
 	"context"
 
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/attribute"
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/audience"
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/client"
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/environment"
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/flag"
-	"github.com/ab-inbev-bees/optimizely-terraform-provider/optimizely/project"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/attribute"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/audience"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/client"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/environment"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/flag"
+	"github.com/bees-oss/optimizely-terraform-provider/optimizely/project"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )

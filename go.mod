@@ -1,4 +1,4 @@
-module github.com/ab-inbev-bees/optimizely-terraform-provider
+module github.com/bees-oss/optimizely-terraform-provider
 
 go 1.16
 
