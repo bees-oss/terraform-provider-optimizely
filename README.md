@@ -1,6 +1,6 @@
 # Terraform provider for Optimizely
 
-Find provider configuration [here](https://registry.terraform.io/providers/ab-inbev-bees/optimizely/latest/docs)
+Find provider configuration [here](https://registry.terraform.io/providers/bees-oss/optimizely/latest/docs)
 
 ## How to use
 
@@ -12,7 +12,7 @@ Understand how to use this provider in your terraform code:
 terraform {
   required_providers {
     optimizely = {
-      source = "ab-inbev-bees/optimizely"
+      source = "bees-oss/optimizely"
       version = "0.0.18"
     }
   }
