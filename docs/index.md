@@ -9,7 +9,7 @@ Optimizely Terraform Provider allows you to manager Optimizely resources such as
 terraform {
   required_providers {
     optimizely = {
-      source = "ab-inbev-bees/optimizely"
+      source = "bees-oss/optimizely"
       version = "0.0.19"
     }
   }
